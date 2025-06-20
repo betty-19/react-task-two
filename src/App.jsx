@@ -1,15 +1,25 @@
 import { useState } from 'react'
+import { Routes, Route} from 'react-router-dom'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // // import './App.css'
 import PhotoGallery from './components/PhotoGallery'
+import LandingPage from './components/LandingPage'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-    <PhotoGallery/>
+    {/* <Routes>
+      <Route path="/" element={<LandingPage/>}/>
+      <Route path="/gallery" element={<PhotoGallery/>} />
+    </Routes> */}
+    <Routes>
+      <Route path="/" element={<LandingPage/>}/>
+      <Route path="/gallery" element={<PhotoGallery/>} />
+    </Routes>
+    {/* <PhotoGallery/> */}
       {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

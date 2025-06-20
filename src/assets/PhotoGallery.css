@@ -83,6 +83,21 @@ text-decoration: none;
 .gallery-section{
     padding:40px 60px;
 }
+.gallery-section > p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 64px;
+    color:#BDBDBD;
+}
+.gallery-section .gal{
+     font-family: 'Roboto', sans-serif;
+     font-weight: 700;
+     color:#333333;
+     font-size:64px;
+}
+.gallery-section hr{
+    color: #F2F2F2;
+}
 .photos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -114,3 +129,95 @@ hr{
     height: 100%;
 }
 
+.contents{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    align-items: start;
+    justify-content: space-around;
+    /* gap:30px; */
+    padding-block:50px;
+}
+.f-logo,.social-media{
+    flex: 1;
+}
+/* .information-contacts{
+    
+} */
+.f-logo{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+.social-media{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    /* justify-content: end; */
+    /* background-color: green; */
+    /* width: 100%;
+    height: 100%; */
+}
+.social-media-icons{
+    display: flex;
+    align-items: center;
+    /* gap:10px; */
+}
+.social-media-icons i{
+font-size:20px;
+margin-right: 20px;
+}
+.f-logo img{
+    width: 145px;
+    height: 94px;
+}
+.information-contacts{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex:2;
+    /* background-color: red; */
+    
+}
+.information-contacts p{
+font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.contacts{
+    /* background-color: blue; */
+}
+.address,.phone,.emial{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap:15px;
+    padding-bottom: 20px;
+}
+.address > p,.phone > p,.emial > p{
+    /* padding:0; */
+    margin:0;
+    
+}
+.information > p,.social-media > p, .contacts > p{
+    font-weight: 700;
+    font-size: 16px;
+}
+.nav-links2{
+    list-style: none;
+    /* margin: 0; */
+    padding: 0;
+}
+.nav-links2 .nav-item2{
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.rights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size:12px;
+    font-weight: 400;
+}
