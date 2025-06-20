@@ -1,7 +1,10 @@
 import React from 'react'
 // import {logo} from '../assets/logo.png'
 import project from '../assets/project.jpg'
-
+import '../assets/LandingPage.css'
+import About1 from '../assets/about1.jpg'
+import About2 from '../assets/about2.jpg'
+import About3 from '../assets/about3.jpg'
 function LandingPage() {
   return (
     <div className="wrapper">
@@ -20,8 +23,11 @@ function LandingPage() {
 
       <div className="project-lorum">
         <div className="left">
-          <p>PROJECT</p>
-          <p>Lorum</p>
+          <div className="project-lorum-p">
+            <p className='project'>PROJECT</p>
+          <p className='Lorum'>Lorum</p>
+          </div>
+          
           <div className="arrow-buttons">
             <button className="left-arrow">
               <i class="bi bi-arrow-left"></i>
@@ -30,10 +36,10 @@ function LandingPage() {
               <i class="bi bi-arrow-right"></i>
             </button>
           </div>
-          <div className="pages">
+          <div className="slide-numbers">
             <div className="prev">
-              <p>0</p>
-              <p>1</p>
+              <p>0 <br/> 1 </p>
+              {/* <p>1</p> */}
             </div>
             <i class="bi bi-slash-lg"></i>
             <p>02</p>
@@ -43,13 +49,34 @@ function LandingPage() {
 
         </div>
         <div className="right">
-          <img src={project} alt="" />
+          <div className="project-img">
+            <img src={project} alt="" />
           <div className="view-project">
-            <a href="">VIEW PROJECT</a>
+            <a href="">View Project</a>
+            <i class="bi bi-arrow-right"></i>
+          </div></div>
+          
+          
+        </div>
+
+      </div>
+      <div className="about">
+        <div className="left-about">
+          <img id="about1" src={About1} alt="" />
+          <img id="about2" src={About2} alt="" />
+        </div>
+        <div className="middle-about">
+          <img id="about3" src={About3} alt="" />
+        </div>
+        <div className="right-about">
+          <p>About</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged.</p>
+            <div className="view-project2">
+            <a href="">Read More</a>
             <i class="bi bi-arrow-right"></i>
           </div>
         </div>
-
       </div>
     </div>
   )
