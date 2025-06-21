@@ -3,55 +3,53 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.wrapper {
+.lp-wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-.wrapper > *:last-child {
-  margin-top: auto; 
+.lp-wrapper > *:last-child {
+  margin-top: auto;
 }
 
-.content {
-  flex: 1; 
-  padding-inline: 50px; 
+.lp-content {
+  flex: 1;
+  padding-inline: 50px;
   display: flex;
   flex-direction: column;
 }
 
-
-.project-lorum {
+.lp-project-lorum {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* background-color: red; */
   gap: 20px;
-  width: 100%; /* Make sure it takes full container width */
+  width: 100%;
 }
 
-
-.project-img {
- width: 100%;
+.lp-project-img {
+  width: 100%;
   position: relative;
 }
 
-.project-img img {
+.lp-project-img img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.view-project {
+.lp-view-project {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -60,30 +58,30 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   gap: 15px;
-   z-index: 10;
+  z-index: 10;
 }
 
-.view-project2 {
+.lp-view-project2 {
   width: 222px;
   height: 71px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  /* background-color: #ffffff; */
   gap: 15px;
 }
 
-.view-project i,
-.view-project2 i {
+.lp-view-project i,
+.lp-view-project2 i {
   font-size: 24px;
 }
 
-.view-project a,
-.view-project2 a {
+.lp-view-project a,
+.lp-view-project2 a {
   font-size: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #333333;
   text-decoration: none;
@@ -91,81 +89,82 @@ html, body {
 }
 
 /* Left Column */
-.left {
+.lp-left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 70px;
 }
-.left,.right{
+.lp-left,
+.lp-right {
   flex: 1;
-  min-width: 0; 
+  min-width: 0;
 }
 
-.project {
-  font-family: 'Roboto', sans-serif;
+.lp-project {
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 64px;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 
-.Lorum {
-  font-family: 'Roboto', sans-serif;
+.lp-lorum {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 64px;
   color: #333333;
 }
 
-.project-lorum-p {
+.lp-project-lorum-p {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.arrow-buttons {
+.lp-arrow-buttons {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.left-arrow,
-.right-arrow {
+.lp-left-arrow,
+.lp-right-arrow {
   width: 53px;
   height: 53px;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-.right-arrow {
-  background-color: #F9F9F9;
+.lp-right-arrow {
+  background-color: #f9f9f9;
 }
 
-.left-arrow i,
-.right-arrow i {
+.lp-left-arrow i,
+.lp-right-arrow i {
   font-size: 24px;
   color: #333333;
 }
 
-.slide-numbers {
+.lp-slide-numbers {
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 
-.slide-numbers i {
-  color: #E0E0E0;
+.lp-slide-numbers i {
+  color: #e0e0e0;
   font-size: 43px;
 }
 
-.about {
-  background-color: #FBFBFB;
+.lp-about {
+  background-color: #fbfbfb;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -174,35 +173,35 @@ html, body {
   flex-wrap: wrap;
 }
 
-#about1 {
+#lp-about1 {
   width: 270px;
   height: 265px;
 }
 
-#about2 {
+#lp-about2 {
   width: 270px;
   height: 140px;
 }
 
-#about3 {
+#lp-about3 {
   width: 270px;
   height: 345px;
 }
 
-.left-about {
+.lp-left-about {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   gap: 20px;
 }
 
-.middle-about {
+.lp-middle-about {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.right-about {
+.lp-right-about {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -210,85 +209,90 @@ html, body {
   gap: 20px;
 }
 
-.right-about p:nth-of-type(1) {
-  font-family: 'Roboto', sans-serif;
+.lp-right-about p:nth-of-type(1) {
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 64px;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 
-.right-about p:nth-of-type(2) {
-  font-family: 'Roboto', sans-serif;
+.lp-right-about p:nth-of-type(2) {
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 25px;
   color: #000000;
 }
 
-.missions,.mission-one,.mission-two{
+.lp-missions,
+.lp-mission-one,
+.lp-mission-two {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.mission-title{
-  font-family: 'Roboto',sans-serif;
+.lp-mission-title {
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 64px;
-  color:#BDBDBD;
+  color: #bdbdbd;
 }
 
-.mission-one,.mission-two{
-  gap:30px;
+.lp-mission-one,
+.lp-mission-two {
+  gap: 30px;
 }
 
-.mission-one .number,.mission-two .number{
-  font-family: 'Roboto',sans-serif;
+.lp-mission-one .lp-number,
+.lp-mission-two .lp-number {
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 200px;
-  color:#F2F2F2;
+  color: #f2f2f2;
 }
 
-.mission-one p:nth-of-type(2),.mission-two p:nth-of-type(2){
-  font-family: 'Roboto',sans-serif;
+.lp-mission-one p:nth-of-type(2),
+.lp-mission-two p:nth-of-type(2) {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  color:#333333;
+  color: #333333;
 }
 
-.project-grid {
+.lp-project-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: 250px;
   gap: 20px;
 }
 
-.item1 {
+.lp-item1 {
   grid-column: span 3;
 }
 
-.item2 {
+.lp-item2 {
   grid-column: span 3;
 }
 
-.item3 {
+.lp-item3 {
   grid-column: span 1;
 }
 
-.item4 {
+.lp-item4 {
   grid-column: span 3;
 }
 
-.item5 {
+.lp-item5 {
   grid-column: span 2;
 }
 
-.grid-item {
+.lp-grid-item {
   position: relative;
   overflow: hidden;
 }
 
-.grid-item img {
+.lp-grid-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -296,11 +300,11 @@ html, body {
   transition: transform 0.3s ease;
 }
 
-.grid-item:hover img {
+.lp-grid-item:hover img {
   transform: scale(1.05);
 }
 
-.sample-project {
+.lp-sample-project {
   position: absolute;
   top: 0;
   left: 0;
@@ -311,17 +315,17 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.grid-item:hover .sample-project {
+.lp-grid-item:hover .lp-sample-project {
   opacity: 1;
 }
 
-.sample-project h1 {
-  font-family: 'Roboto', sans-serif;
+.lp-sample-project h1 {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 32px;
   text-align: center;
@@ -329,7 +333,7 @@ html, body {
   margin-bottom: 15px;
 }
 
-.view-project2 {
+.lp-sample-project .lp-view-project2 {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -341,17 +345,18 @@ html, body {
   text-decoration: none;
 }
 
-.view-project2 a {
+.lp-sample-project .lp-view-project2 a {
   color: #333;
   text-decoration: none;
 }
 
-.view-project2 i {
+.lp-sample-project .lp-view-project2 i {
   font-size: 16px;
   color: #333;
 }
 
-.all-projects, .send-email {
+.lp-all-projects,
+.lp-send-email {
   width: 222px;
   height: 71px;
   display: flex;
@@ -359,42 +364,44 @@ html, body {
   justify-self: end;
   justify-content: center;
   gap: 15px;
-  background-color:#333333;
+  background-color: #333333;
   margin-block: 20px;
 }
 
-.send-email {
+.lp-send-email {
   justify-self: start;
 }
 
-.all-projects i, .send-email i {
+.lp-all-projects i,
+.lp-send-email i {
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.all-projects a, .send-email a {
+.lp-all-projects a,
+.lp-send-email a {
   font-size: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.contact-us > p {
-  font-family: 'Roboto',sans-serif;
+.lp-contact-us > p {
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 64px;
-  color:#BDBDBD;
+  color: #bdbdbd;
 }
 
-.contact {
+.lp-contact {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-form {
+.lp-contact form {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -402,54 +409,59 @@ form {
   flex: 1;
 }
 
-input, textarea {
+.lp-contact input,
+.lp-contact textarea {
   width: 391px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   border: none;
   padding: 10px 25px;
 }
 
-input {
+.lp-contact input {
   height: 45px;
 }
 
-textarea {
+.lp-contact textarea {
   height: 147px;
 }
 
-.contact-img {
+.lp-contact-img {
   width: 749px;
   height: 369px;
   flex: 1;
 }
 
-.contact-img img {
+.lp-contact-img img {
   width: 100%;
   height: 100%;
 }
 
-/* Responsive fallback */
+
 @media (max-width: 768px) {
-  .project-grid {
+  .lp-project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .item1, .item2, .item3, .item4, .item5 {
+  .lp-item1,
+  .lp-item2,
+  .lp-item3,
+  .lp-item4,
+  .lp-item5 {
     grid-column: span 2 !important;
   }
 }
 
 @media (max-width: 992px) {
-  .project-lorum {
+  .lp-project-lorum {
     flex-direction: column;
     align-items: center;
   }
 
-  .about {
+  .lp-about {
     flex-direction: column;
     align-items: center;
   }
 
-  .right-about {
+  .lp-right-about {
     text-align: center;
   }
 }
