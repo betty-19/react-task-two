@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.our-projects-section {
+  padding: 50px;
+  background-color: #fff;
+}
+
+.our-projects-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.our-projects-wrapper > p {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: #BDBDBD;
+  margin-bottom: 40px;
+}
+
+.our-projects-wrapper > p span {
+  font-weight: 700;
+  color: #333333;
+}
+
+.our-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  background-color: #FBFBFB;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.project-img {
+  width: 50%;
+  min-width: 300px;
+  max-width: 670px;
+  height: auto;
+  flex: 1;
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.project-info p:nth-of-type(1) {
+  font-weight: 300;
+  font-size: 32px;
+  color: #BDBDBD;
+}
+
+.project-info p:nth-of-type(2) {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.view-more {
+  width: fit-content;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.view-more:hover {
+  background-color: #f1f1f1;
+}
+
+.view-more i {
+  font-size: 20px;
+  color: #333333;
+}
+
+.view-more a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .project {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-img, .project-info {
+    width: 100%;
+  }
+
+  .our-projects-wrapper > p,
+  .our-projects-wrapper > p span {
+    font-size: 48px;
+    line-height: 52px;
+  }
+}
+
+@media (max-width: 576px) {
+  .our-projects-section {
+    padding: 30px 20px;
+  }
+
+  .our-projects-wrapper > p,
+  .our-projects-wrapper > p span {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .project-info p:nth-of-type(1) {
+    font-size: 24px;
+  }
+
+  .project-info p:nth-of-type(2) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .view-more {
+    width: 100%;
+    justify-content: center;
+  }
+}

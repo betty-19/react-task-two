@@ -3,30 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html, body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
 
 .wrapper {
-  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+.content {
+  flex: 1; /* Fills all space between Nav and Footer */
+  padding-inline: 50px; /* Padding only on main content */
+  display: flex;
+  flex-direction: column;
+}
 
+/* Keep the rest of your CSS as is */
 .project-lorum {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  /* background-color: red; */
   gap: 20px;
+  width: 100%; /* Make sure it takes full container width */
 }
 
+
 .project-img {
-  max-width: 770px;
-  width: 100%;
+ width: 100%;
   position: relative;
 }
 
@@ -81,6 +93,10 @@ html, body {
   flex-direction: column;
   justify-content: space-between;
   gap: 70px;
+}
+.left,.right{
+  flex: 1;
+  min-width: 0; 
 }
 
 .project {
@@ -145,7 +161,6 @@ html, body {
   font-size: 43px;
 }
 
-
 .about {
   background-color: #FBFBFB;
   display: flex;
@@ -154,7 +169,6 @@ html, body {
   gap: 20px;
   margin-block: 100px;
   flex-wrap: wrap;
-  padding: 20px;
 }
 
 #about1 {
@@ -208,6 +222,218 @@ html, body {
   color: #000000;
 }
 
+.missions,.mission-one,.mission-two{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mission-title{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  font-size: 64px;
+  color:#BDBDBD;
+}
+
+.mission-one,.mission-two{
+  gap:30px;
+}
+
+.mission-one .number,.mission-two .number{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 900;
+  font-size: 200px;
+  color:#F2F2F2;
+}
+
+.mission-one p:nth-of-type(2),.mission-two p:nth-of-type(2){
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color:#333333;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 250px;
+  gap: 20px;
+}
+
+.item1 {
+  grid-column: span 3;
+}
+
+.item2 {
+  grid-column: span 3;
+}
+
+.item3 {
+  grid-column: span 1;
+}
+
+.item4 {
+  grid-column: span 3;
+}
+
+.item5 {
+  grid-column: span 2;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+.sample-project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .sample-project {
+  opacity: 1;
+}
+
+.sample-project h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.view-project2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #333;
+  text-decoration: none;
+}
+
+.view-project2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.view-project2 i {
+  font-size: 16px;
+  color: #333;
+}
+
+.all-projects, .send-email {
+  width: 222px;
+  height: 71px;
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  justify-content: center;
+  gap: 15px;
+  background-color:#333333;
+  margin-block: 20px;
+}
+
+.send-email {
+  justify-self: start;
+}
+
+.all-projects i, .send-email i {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.all-projects a, .send-email a {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contact-us > p {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  font-size: 64px;
+  color:#BDBDBD;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  flex: 1;
+}
+
+input, textarea {
+  width: 391px;
+  background-color: #F3F3F3;
+  border: none;
+  padding: 10px 25px;
+}
+
+input {
+  height: 45px;
+}
+
+textarea {
+  height: 147px;
+}
+
+.contact-img {
+  width: 749px;
+  height: 369px;
+  flex: 1;
+}
+
+.contact-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item1, .item2, .item3, .item4, .item5 {
+    grid-column: span 2 !important;
+  }
+}
 
 @media (max-width: 992px) {
   .project-lorum {
