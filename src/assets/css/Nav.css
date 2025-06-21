@@ -5,27 +5,22 @@
   font-family: 'Roboto',sans-serif;
 }
 
-/* .wrapper {
-  width: 100vw;
-  height: 100vh;
-} */
-/* .wrapper{
-    padding: 50px;
-} */
 .nav {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 50px;
-  /* background-color: red; */
+ 
 }
-
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
 .digital-project {
-  width: 69;
-height: 12;
-
-
+  width: 69px;
+height: 12px;
 }
 
 .logo img {
@@ -60,4 +55,20 @@ cursor: pointer;
 .nav-items:focus{
     border-top: #333333 solid 1px;
     border-bottom: #333333 solid 1px;
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 }

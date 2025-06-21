@@ -60,6 +60,22 @@ function PhotoGallery() {
 
 
           </div>
+          <div className="slide-numbers">
+            <div className="prev">
+              <p>0 <br/> 1 </p>
+              {/* <p>1</p> */}
+            </div>
+            <i class="bi bi-slash-lg"></i>
+            <p>02</p>
+                <div className="arrow-buttons">
+            <button className="left-arrow">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button className="right-arrow">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+          </div>
           </div>
 
         <Footer/>   

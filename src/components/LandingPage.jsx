@@ -114,7 +114,7 @@ function LandingPage() {
                   <br />
                   Project
                 </h1>
-                <div className="lp-view-project2">
+                <div className="lp-view-project3">
                   <a href="">View more</a>
                   <i className="bi bi-arrow-right"></i>
                 </div>
@@ -129,7 +129,7 @@ function LandingPage() {
                   <br />
                   Project
                 </h1>
-                <div className="lp-view-project2">
+                <div className="lp-view-project3">
                   <a href="">View more</a>
                   <i className="bi bi-arrow-right"></i>
                 </div>
@@ -144,7 +144,7 @@ function LandingPage() {
                   <br />
                   Project
                 </h1>
-                <div className="lp-view-project2">
+                <div className="lp-view-project3">
                   <a href="">View more</a>
                   <i className="bi bi-arrow-right"></i>
                 </div>
@@ -159,7 +159,7 @@ function LandingPage() {
                   <br />
                   Project
                 </h1>
-                <div className="lp-view-project2">
+                <div className="lp-view-project3">
                   <a href="">View more</a>
                   <i className="bi bi-arrow-right"></i>
                 </div>
@@ -174,7 +174,7 @@ function LandingPage() {
                   <br />
                   Project
                 </h1>
-                <div className="lp-view-project2">
+                <div className="lp-view-project3">
                   <a href="">View more</a>
                   <i className="bi bi-arrow-right"></i>
                 </div>

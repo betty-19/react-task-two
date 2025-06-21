@@ -69,17 +69,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
   gap: 15px;
 }
+.lp-view-project3 {
+  width: 222px;
+  height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+ color: #ffffff;
+  gap: 15px;
+}
+.lp-view-project3 a {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;}
 
 .lp-view-project i,
-.lp-view-project2 i {
+.lp-view-project2 i,.lp-view-project3 i {
   font-size: 24px;
 }
 
 .lp-view-project a,
-.lp-view-project2 a {
+.lp-view-project2 a{
   font-size: 12px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -318,6 +334,7 @@ body {
   align-items: start;
   opacity: 0;
   transition: opacity 0.3s ease;
+  padding-left: 20px;
 }
 
 .lp-grid-item:hover .lp-sample-project {
@@ -365,7 +382,7 @@ body {
   justify-content: center;
   gap: 15px;
   background-color: #333333;
-  margin-block: 20px;
+  margin-block: 50px;
 }
 
 .lp-send-email {

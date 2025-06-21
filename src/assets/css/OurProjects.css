@@ -148,9 +148,10 @@
   font-weight: 400;
   font-size: 24px;
   color: #BDBDBD;
+  margin-block: 50px;
 }
 
-.slide-numbers i {
+.slide-numbers > i {
   color: #E0E0E0;
   font-size: 43px;
 }
