@@ -1,16 +1,16 @@
 import React from 'react'
- import logo from '../assets/logo.png'
- import '../assets/PhotoGallery.css'
- import one from '../assets/one.png';
- import two from '../assets/two.jpg';
- import three from '../assets/three.jpg';
- import four from '../assets/four.jpg';
- import five from '../assets/five.jpg';
- import six from '../assets/six.jpg';
- import seven from '../assets/seven.jpg';
- import eight from '../assets/eight.jpg';
- import nine from  '../assets/nine.jpg';
- import ten from '../assets/ten.jpg';
+ import logo from '../assets/images/logo.png'
+ import '../assets/css/PhotoGallery.css'
+ import one from '../assets/images/one.png';
+ import two from '../assets/images/two.jpg';
+ import three from '../assets/images/three.jpg';
+ import four from '../assets/images/four.jpg';
+ import five from '../assets/images/five.jpg';
+ import six from '../assets/images/six.jpg';
+ import seven from '../assets/images/seven.jpg';
+ import eight from '../assets/images/eight.jpg';
+ import nine from  '../assets/images/nine.jpg';
+ import ten from '../assets/images/ten.jpg';
  import Nav from './Nav';
  import Footer from './Footer';
 

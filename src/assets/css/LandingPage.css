@@ -17,15 +17,18 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+.wrapper > *:last-child {
+  margin-top: auto; 
+}
 
 .content {
-  flex: 1; /* Fills all space between Nav and Footer */
-  padding-inline: 50px; /* Padding only on main content */
+  flex: 1; 
+  padding-inline: 50px; 
   display: flex;
   flex-direction: column;
 }
 
-/* Keep the rest of your CSS as is */
+
 .project-lorum {
   display: flex;
   align-items: center;

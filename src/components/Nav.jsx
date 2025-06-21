@@ -1,8 +1,8 @@
 import React from 'react'
 import '../assets/css/Nav.css'
 import { Link } from 'react-router-dom';
-import logo from '../assets/nav-logo.png'
-import digitalProjects from '../assets/digitalProject.png'
+import logo from '../assets/images/nav-logo.png'
+import digitalProjects from '../assets/images/digitalProject.png'
 function Nav() {
   return (
     <div>

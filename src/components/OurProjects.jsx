@@ -1,17 +1,19 @@
 import React from 'react';
 import '../assets/css/OurProjects.css';
-import ourP1 from '../assets/ourP1.png';
-import ourP2 from '../assets/ourP2.png';
-import ourP3 from '../assets/ourP3.png';
+import ourP1 from '../assets/images/ourP1.png';
+import ourP2 from '../assets/images/ourP2.png';
+import ourP3 from '../assets/images/ourP3.png';
 import Footer from './Footer';
 import  Nav from './Nav'
 
 function OurProjects() {
   return (
-    <>
+   
    
     <div className="our-projects-section">
-     <Nav/>  <div className="our-projects-wrapper">
+
+     <Nav/>  
+     <div className="our-projects-wrapper">
         <p>
           Our<br /><span>Project</span>
         </p>
@@ -36,10 +38,26 @@ function OurProjects() {
             </div>
           ))}
         </div>
+        <div className="slide-numbers">
+            <div className="prev">
+              <p>0 <br/> 1 </p>
+              {/* <p>1</p> */}
+            </div>
+            <i class="bi bi-slash-lg"></i>
+            <p>02</p>
+                <div className="arrow-buttons">
+            <button className="left-arrow">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button className="right-arrow">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+          </div>
       </div>
    <Footer/> </div>
     
-    </>
+   
     
   );
 }
