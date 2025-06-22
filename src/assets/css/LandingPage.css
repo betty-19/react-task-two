@@ -4,11 +4,11 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-  
   height: 100%;
   margin: 0;
   padding: 0;
@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .lp-wrapper > *:last-child {
   margin-top: auto;
 }
@@ -27,7 +28,6 @@ body {
 .lp-content {
   flex: 1;
   padding: 70px 50px;
-
   display: flex;
   flex-direction: column;
 }
@@ -37,16 +37,13 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* gap: 20px; */
   width: 100%;
-
 }
 
 .lp-project-img {
   max-width: 770px;
   width: 100%;
   position: relative;
- 
 }
 
 .lp-project-img img {
@@ -78,30 +75,34 @@ body {
   background-color: #ffffff;
   gap: 15px;
 }
+
 .lp-view-project3 {
   width: 222px;
   height: 71px;
   display: flex;
   align-items: center;
   justify-content: start;
- color: #ffffff;
+  color: #ffffff;
   gap: 15px;
 }
+
 .lp-view-project3 a {
   font-size: 12px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;}
+  text-transform: uppercase;
+}
 
 .lp-view-project i,
-.lp-view-project2 i,.lp-view-project3 i {
+.lp-view-project2 i,
+.lp-view-project3 i {
   font-size: 24px;
 }
 
 .lp-view-project a,
-.lp-view-project2 a{
+.lp-view-project2 a {
   font-size: 12px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -110,47 +111,41 @@ body {
   text-transform: uppercase;
 }
 
-/* Left Column */
 .lp-left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 70px;
-}
-.lp-left
-{
   flex: 0.5;
-  /* min-width: 0; */
 }
+
 .lp-right {
-flex: 0.6;
+  flex: 0.6;
 }
 
 .lp-project {
   font-weight: 300;
   font-size: 64px;
   color: #bdbdbd;
-   
 }
-.lp-project,.lp-lorum{
+
+.lp-project,
+.lp-lorum {
   padding: 0;
   margin: 0;
   line-height: 1;
 }
+
 .lp-lorum {
- 
   font-weight: 700;
   font-size: 64px;
   color: #333333;
-  
-
 }
 
 .lp-project-lorum-p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .lp-arrow-buttons {
@@ -168,6 +163,13 @@ flex: 0.6;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lp-left-arrow:hover,
+.lp-right-arrow:hover {
+  background-color: #f9f9f9;
 }
 
 .lp-right-arrow {
@@ -203,21 +205,15 @@ flex: 0.6;
   gap: 20px;
   margin-block: 100px;
   flex-wrap: wrap;
+  flex: 1;
 }
 
-#lp-about1 {
-  width: 270px;
-  height: 265px;
-}
-
-#lp-about2 {
-  width: 270px;
-  height: 140px;
-}
-
+#lp-about1,
+#lp-about2,
 #lp-about3 {
-  width: 270px;
-  height: 345px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .lp-left-about {
@@ -225,12 +221,16 @@ flex: 0.6;
   flex-direction: column;
   justify-content: space-around;
   gap: 20px;
+  max-width: 270px;
+  width: 100%;
 }
 
 .lp-middle-about {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 270px;
+  width: 100%;
 }
 
 .lp-right-about {
@@ -239,6 +239,7 @@ flex: 0.6;
   justify-content: space-between;
   max-width: 500px;
   gap: 20px;
+  width: 100%;
 }
 
 .lp-right-about p:nth-of-type(1) {
@@ -248,7 +249,6 @@ flex: 0.6;
 }
 
 .lp-right-about p:nth-of-type(2) {
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 25px;
@@ -262,13 +262,17 @@ flex: 0.6;
   align-items: center;
   justify-content: space-between;
 }
-.lp-our-projects{
+
+.lp-our-projects {
   margin-top: 30px;
 }
-.lp-project-title{
+
+.lp-project-title {
   margin-bottom: 30px;
 }
-.lp-mission-title,.lp-project-title {
+
+.lp-mission-title,
+.lp-project-title {
   font-weight: 300;
   font-size: 64px;
   color: #bdbdbd;
@@ -278,7 +282,6 @@ flex: 0.6;
 .lp-mission-one,
 .lp-mission-two {
   gap: 30px;
-
 }
 
 .lp-mission-one .lp-number,
@@ -361,14 +364,12 @@ flex: 0.6;
 }
 
 .lp-sample-project h1 {
- 
   font-weight: 700;
   font-size: 64px;
   text-align: center;
   color: #fff;
   margin-bottom: 15px;
   line-height: 1;
-
 }
 
 .lp-sample-project .lp-view-project2 {
@@ -393,8 +394,7 @@ flex: 0.6;
   color: #333;
 }
 
-.lp-all-projects,
-.lp-send-email {
+.lp-all-projects {
   width: 222px;
   height: 71px;
   display: flex;
@@ -404,19 +404,129 @@ flex: 0.6;
   gap: 15px;
   background-color: #333333;
   margin-block: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lp-all-projects:hover {
+  background-color: #555555;
+}
+
+.lp-all-projects i {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.lp-all-projects a {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Contact Section Styles - Enhanced Responsive */
+.lp-contact-us {
+  margin-top: 50px;
+}
+
+.lp-contact-us > p {
+  font-weight: 300;
+  font-size: 64px;
+  color: #bdbdbd;
+  margin-bottom: 40px;
+}
+
+.lp-contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.lp-contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  flex: 1;
+  max-width: 500px;
+}
+
+.lp-contact input,
+.lp-contact textarea {
+  width: 100%;
+  max-width: 391px;
+  background-color: #f3f3f3;
+  border: none;
+  padding: 15px 25px;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 0;
+  transition: background-color 0.3s ease;
+}
+
+.lp-contact input {
+  height: 50px;
+}
+
+.lp-contact textarea {
+  height: 147px;
+  resize: vertical;
+  font-family: "Roboto", sans-serif;
+}
+
+.lp-contact input:focus,
+.lp-contact textarea:focus {
+  outline: none;
+  background-color: #eeeeee;
+}
+
+.lp-contact input::placeholder,
+.lp-contact textarea::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.lp-contact-img {
+  flex: 1;
+  max-width: 749px;
+  height: 369px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lp-contact-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .lp-send-email {
+  width: 222px;
+  height: 71px;
+  display: flex;
+  align-items: center;
   justify-self: start;
+  justify-content: center;
+  gap: 15px;
+  background-color: #333333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.lp-all-projects i,
+.lp-send-email:hover {
+  background-color: #555555;
+}
+
 .lp-send-email i {
   font-size: 24px;
   color: #ffffff;
 }
 
-.lp-all-projects a,
 .lp-send-email a {
   font-size: 12px;
   font-family: "Roboto", sans-serif;
@@ -426,174 +536,20 @@ flex: 0.6;
   text-transform: uppercase;
 }
 
-.lp-contact-us > p {
-  font-weight: 300;
-  font-size: 64px;
-  color: #bdbdbd;
-}
-
-.lp-contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.lp-contact form {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  gap: 10px;
-  flex: 1;
-}
-
-.lp-contact input,
-.lp-contact textarea {
-  width: 391px;
-  background-color: #f3f3f3;
-  border: none;
-  padding: 10px 25px;
-}
-
-.lp-contact input,.lp-contact textarea {
-  height: 45px;
-  
-font-weight: 400;
-font-size: 14px;
-
-
-}
-
-.lp-contact textarea {
-  height: 147px;
-}
-
-.lp-contact-img {
-  width: 749px;
-  height: 369px;
-  flex: 1;
-}
-
-.lp-contact-img img {
-  width: 100%;
-  height: 100%;
-}
-
-@media(max-width:480px){
-.lp-view-project,.lp-view-project2,.lp-all-projects,.lp-send-email {
-  width: 111px;
-  height: 40px;
-  gap: 7px; 
-}
-
-.lp-view-project i,
-.lp-view-project2 i,.lp-view-project3 i,.lp-all-projects i,.lp-send-email i {
-  font-size: 14px;
-}
-
-.lp-view-project a,
-.lp-view-project2 a,.lp-all-projects a,.lp-view-project3 i,.lp-all-projects i,.lp-send-email a{
-  font-size: 10px;
-}
-
-.lp-left {
-  gap: 40px;
-}
-
-.lp-lorum,.lp-project,.lp-right-about p:nth-of-type(1),.lp-mission-title,.lp-project-title,.lp-sample-project h1,.lp-contact-us > p {
-  font-size: 40px;
-}
-.lp-mission-title{
-  line-height: 1;
-  
-}
-.lp-arrow-buttons {
-  gap: 10px;
-}
-
-.lp-left-arrow,
-.lp-right-arrow {
-  width: 40px;
-  height: 40px;
-}
-.lp-left-arrow i,
-.lp-right-arrow i {
-  font-size: 14px;
-}
-
-.lp-slide-numbers {
-  gap: 20px;
-  font-size: 18px;
-}
-
-.lp-slide-numbers i {
-  color: #e0e0e0;
-  font-size: 30px;
-}
-.lp-left-about {
-  display: none;
-}
-.lp-middle-about {
-  padding-top:20px
-}
-.lp-right-about p:nth-of-type(2) {
-  font-size: 12px;
-  padding-inline:20px;
-
-}
-
-
-
-.lp-mission-one,
-.lp-mission-two {
-  gap: 0px;
- flex: 1;
-}
-
-.lp-mission-one .lp-number,
-.lp-mission-two .lp-number {
-  font-weight: 900;
-  font-size: 100px;
-}
-
-.lp-mission-one p:nth-of-type(2),
-.lp-mission-two p:nth-of-type(2) {
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-}
-.lp-contact input,.lp-contact textarea {
-font-size: 12px;
-
-
-}
-
-}
-@media (max-width: 768px) {
-  .lp-missions,
-.lp-mission-one,
-.lp-mission-two {
-  flex-direction: column;
-}
-.lp-mission-one,
-.lp-mission-two {
-  gap: 0px;
-  
-
-}
-  .lp-project-grid {
-    grid-template-columns: repeat(2, 1fr);
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .lp-content {
+    padding: 50px 30px;
   }
-  .lp-item1,
-  .lp-item2,
-  .lp-item3,
-  .lp-item4,
-  .lp-item5 {
-    grid-column: span 2 !important;
+
+  .lp-contact {
+    gap: 30px;
   }
-  .lp-contact-img{
-    display: none;
+
+  .lp-contact-img {
+    max-width: 400px;
+    height: 300px;
   }
- 
 }
 
 @media (max-width: 992px) {
@@ -601,17 +557,341 @@ font-size: 12px;
     flex-direction: column;
     align-items: center;
   }
-   .lp-view-project2{
-  margin-left:20px ;
-  margin-bottom:20px ;
-}
+
+  .lp-view-project2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
 
   .lp-about {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+  }
+
+  .lp-left-about,
+  .lp-middle-about,
+  .lp-right-about {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .lp-right-about p:nth-of-type(2) {
+    padding: 0 10px;
+    text-align: center;
   }
 
   .lp-right-about {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .lp-content {
+    padding: 40px 20px;
+  }
+
+  .lp-missions,
+  .lp-mission-one,
+  .lp-mission-two {
+    flex-direction: column;
+  }
+
+  .lp-project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lp-item1,
+  .lp-item2,
+  .lp-item3,
+  .lp-item4,
+  .lp-item5 {
+    grid-column: span 2 !important;
+  }
+
+  /* Contact Section Responsive */
+  .lp-contact-us > p {
+    font-size: 48px;
     text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .lp-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .lp-contact form {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .lp-contact input,
+  .lp-contact textarea {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .lp-contact-img {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    order: -1; /* Move image above form */
+  }
+
+  .lp-send-email {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .lp-content {
+    padding: 30px 15px;
+  }
+
+  /* Contact Section */
+  .lp-contact-us > p {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  .lp-contact {
+    gap: 25px;
+  }
+
+  .lp-contact form {
+    gap: 12px;
+  }
+
+  .lp-contact input,
+  .lp-contact textarea {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  .lp-contact input {
+    height: 45px;
+  }
+
+  .lp-contact textarea {
+    height: 120px;
+  }
+
+  .lp-contact input::placeholder,
+  .lp-contact textarea::placeholder {
+    font-size: 13px;
+  }
+
+  .lp-contact-img {
+    height: 200px;
+  }
+
+  .lp-send-email {
+    width: 180px;
+    height: 60px;
+    gap: 12px;
+  }
+
+  .lp-send-email i {
+    font-size: 20px;
+  }
+
+  .lp-send-email a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lp-content {
+    padding: 25px 10px;
+  }
+
+  .lp-view-project,
+  .lp-view-project2,
+  .lp-all-projects,
+  .lp-send-email {
+    width: 111px;
+    height: 40px;
+    gap: 7px;
+  }
+
+  .lp-view-project i,
+  .lp-view-project2 i,
+  .lp-view-project3 i,
+  .lp-all-projects i {
+    font-size: 14px;
+  }
+
+  .lp-view-project a,
+  .lp-view-project2 a,
+  .lp-all-projects a {
+    font-size: 10px;
+  }
+
+  .lp-left {
+    gap: 40px;
+  }
+
+  .lp-lorum,
+  .lp-project,
+  .lp-right-about p:nth-of-type(1),
+  .lp-mission-title,
+  .lp-project-title,
+  .lp-sample-project h1 {
+    font-size: 40px;
+  }
+
+  .lp-arrow-buttons {
+    gap: 10px;
+  }
+
+  .lp-left-arrow,
+  .lp-right-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .lp-left-arrow i,
+  .lp-right-arrow i {
+    font-size: 14px;
+  }
+
+  .lp-slide-numbers {
+    gap: 20px;
+    font-size: 18px;
+  }
+
+  .lp-slide-numbers i {
+    font-size: 30px;
+  }
+
+  .lp-left-about {
+    display: none;
+  }
+
+  .lp-middle-about {
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .lp-right-about p:nth-of-type(2) {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .lp-mission-one,
+  .lp-mission-two {
+    gap: 0px;
+    flex: 1;
+  }
+
+  .lp-mission-one .lp-number,
+  .lp-mission-two .lp-number {
+    font-weight: 900;
+    font-size: 100px;
+  }
+
+  .lp-mission-one p:nth-of-type(2),
+  .lp-mission-two p:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  /* Contact Section Mobile */
+  .lp-contact-us > p {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .lp-contact {
+    gap: 20px;
+  }
+
+  .lp-contact form {
+    gap: 10px;
+  }
+
+  .lp-contact input,
+  .lp-contact textarea {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .lp-contact input {
+    height: 42px;
+  }
+
+  .lp-contact textarea {
+    height: 100px;
+  }
+
+  .lp-contact input::placeholder,
+  .lp-contact textarea::placeholder {
+    font-size: 12px;
+  }
+
+  .lp-contact-img {
+    height: 180px;
+  }
+
+  .lp-send-email {
+    width: 150px;
+    height: 50px;
+    gap: 10px;
+  }
+
+  .lp-send-email i {
+    font-size: 18px;
+  }
+
+  .lp-send-email a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .lp-content {
+    padding: 20px 8px;
+  }
+
+  /* Contact Section Ultra Small */
+  .lp-contact-us > p {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .lp-contact input,
+  .lp-contact textarea {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .lp-contact input {
+    height: 38px;
+  }
+
+  .lp-contact textarea {
+    height: 90px;
+  }
+
+  .lp-contact-img {
+    height: 150px;
+  }
+
+  .lp-send-email {
+    width: 130px;
+    height: 45px;
+    gap: 8px;
+  }
+
+  .lp-send-email i {
+    font-size: 16px;
+  }
+
+  .lp-send-email a {
+    font-size: 9px;
   }
 }
