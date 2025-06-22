@@ -143,12 +143,13 @@ hr{
   .photos {
     grid-template-columns: 1fr;
     justify-items: center;
+    align-items: center;
   }
 
-  .photos .img {
-    width: 90%;
-    height: auto;
-  }
+  /* .photos .img {
+    width: 100px;
+    height:150px;
+  } */
 
   .gallery-section > p,
   .gallery-section .gal {
