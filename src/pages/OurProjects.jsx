@@ -3,8 +3,8 @@ import '../assets/css/OurProjects.css';
 import ourP1 from '../assets/images/ourP1.png';
 import ourP2 from '../assets/images/ourP2.png';
 import ourP3 from '../assets/images/ourP3.png';
-import Footer from './Footer';
-import  Nav from './Nav'
+import Footer from '../components/Footer';
+import  Nav from '../components/Nav'
 
 function OurProjects() {
   return (

@@ -1,45 +1,9 @@
-/* *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box
-}
-.wrapper{
-    max-width: 100vw;
- width: 100%;
- height: 100vh;
- background-color: brown;
-}
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: red;
-}
-.logo{
-    width:150px;
-    height: 30px;
-}
-.logo img{
-    width:150px;
-    height: 30px;
-}
-.nav-links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: blue;
-    padding:0;
-    gap:50px;
-text-decoration: none;
-}
-.nav-items{
-   
-} */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
@@ -48,49 +12,38 @@ text-decoration: none;
   /* background-color: yellow; */
 }
 
-.nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  /* background-color: red; */
-}
 
-.logo {
-  width: 150px;
-  height: 30px;
-}
 
-.logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
 
-.nav-links {
+
+
+/* .nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: blue; */
   gap: 50px;
   list-style: none;
-}
+} */
 
-.nav-items {
+/* .nav-items {
   color: black;
   font-weight: bold;
-}
+} */
 .gallery-section{
-    padding:40px 60px;
+    padding:70px 50px;
 }
 .gallery-section > p{
-    font-family: 'Roboto', sans-serif;
+   
     font-weight: 300;
     font-size: 64px;
     color:#BDBDBD;
 }
+.gallery-section > p,.gallery-section .gal{
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
 .gallery-section .gal{
-     font-family: 'Roboto', sans-serif;
      font-weight: 700;
      color:#333333;
      font-size:64px;
@@ -143,9 +96,9 @@ hr{
     justify-items: center;
   }
 
-  .gallery-section {
+  /* .gallery-section {
     padding: 30px 40px;
-  }
+  } */
 
   .photos .img {
     width: 180px;
@@ -164,9 +117,9 @@ hr{
     justify-items: center;
   }
 
-  .gallery-section {
+  /* .gallery-section {
     padding: 20px 20px;
-  }
+  } */
 
   .photos .img {
     width: 160px;
@@ -179,8 +132,8 @@ hr{
   }
 
   .slide-numbers {
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column;
+    align-items: center; */
     font-size: 18px;
     gap: 15px;
   }
@@ -203,15 +156,6 @@ hr{
     text-align: center;
   }
 
-  .slide-numbers {
-    font-size: 16px;
-    gap: 10px;
-  }
-
-  .arrow-buttons {
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-  }
+  
 }
 

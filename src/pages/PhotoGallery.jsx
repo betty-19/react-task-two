@@ -1,5 +1,5 @@
 import React from 'react'
- import logo from '../assets/images/logo.png'
+
  import '../assets/css/PhotoGallery.css'
  import one from '../assets/images/one.png';
  import two from '../assets/images/two.jpg';
@@ -11,8 +11,8 @@ import React from 'react'
  import eight from '../assets/images/eight.jpg';
  import nine from  '../assets/images/nine.jpg';
  import ten from '../assets/images/ten.jpg';
- import Nav from './Nav';
- import Footer from './Footer';
+ import Nav from '../components/Nav';
+ import Footer from '../components/Footer';
 
 
 

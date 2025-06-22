@@ -9,8 +9,8 @@ import P3 from "../assets/images/p3.png"
 import P4 from "../assets/images/p4.png"
 import P5 from "../assets/images/p5.png"
 import ContactImg from "../assets/images/contact-img.jpg"
-import Footer from "./Footer"
-import Nav from "./Nav.jsx"
+import Footer from "../components/Footer.jsx"
+import Nav from "../components/Nav.jsx"
 
 function LandingPage() {
   return (

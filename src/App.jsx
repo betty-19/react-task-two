@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Routes, Route} from 'react-router-dom'
-import PhotoGallery from './components/PhotoGallery'
-import LandingPage from './components/LandingPage'
+import PhotoGallery from './pages/PhotoGallery'
+import LandingPage from './pages/LandingPage'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-import OurProjects from './components/OurProjects'
+import OurProjects from './pages/OurProjects'
 
 function App() {
   
